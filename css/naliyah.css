@@ -1,0 +1,634 @@
+
+     /* this was part of our workshop*/
+   
+   * { 
+        scroll-behavior: smooth;
+    }
+
+   
+   /* this fuction is for mobile*/
+
+    @media (max-width: 800px) {
+    }
+
+   /* this fuction is for destop*/
+
+   @media (min-width: 801px) {
+   }
+
+    /* this was part of our font workshop*/
+
+   @font-face {
+    font-family: 'Tanklager-Original';
+    src: url('/fonts/Tanklager-Original.woff') format('woff'),
+        url('/fonts/Tanklager-Original.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+      /* this is applied to the body text and this was taught in class workshop*/
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        font-family: "Tanklager-Original";
+        font-size: 200%;
+        color: #1E3A40;
+        text-align: left; /* for the h1 are left-aligned */
+        margin-bottom: 5%; /* this adds a margin underneath the h1 */
+        margin-top: 10%; /* this adds a margin above the h1 */
+        line-height: 0.9; /* 0.9 means 90% */ /* https://www.w3schools.com/cssref/tryit.php?filename=trycss_line-height#:~:text=%25%20to%20120%25.-,line%2Dheight%3A%201.6%20(recommended)%3A,relative%20to%20the%20font%20size. */
+    }
+
+    p {
+        font-size: 1rem;   /* this was part of our font workshop 1rem equals to 16px*/
+        color: #1E3A40;
+        text-align: left; /* this makes all the paragraphs left-aligned */
+        line-height: 1.6; /* 1.6 is the recommond line-height according to W3schools */
+        margin-bottom: 5%; /* adding a margin bottom below the paragraphs */
+    }
+
+    body {
+        padding-left: 5%; /* this adds a left padding to the edge */
+    }
+    
+    h3 {
+        font-size: 2rem; /* 2 rem equals 32px */
+        color: #1E3A40;
+        margin-bottom: 2%;
+    }
+
+    .logo {
+        font-size: 1.6rem; /* 1.8 equals to 30 px W3schools */ /* https://www.w3schools.com/css/css_font_size.asp */
+        font-weight: bold;
+        color: #FABC5E;
+        justify-content: space-between; /* logo to the right and menu individual for the left */ /* https://www.w3schools.com/css/css_font_size.asp */
+    }
+    
+    /* Navbar Container */
+    .navbar {
+        display: flex; /* flex to the right */
+        background-color:  #D9E9ED;
+        padding: 20px 40px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 12px; 
+        margin: 20px auto; /* adds a margin evenly */
+    }
+
+    /* this display none on destop */
+    @media screen and (min-width: 1100px) {
+        .nav-item {
+        display: none;
+        }
+    }
+
+
+    /*https://janessagarrow.com/blog/pure-css-hamburger-menu/ */ /* Citing menu fuction */
+
+    /* Menu Container */
+    .menu-container {
+        display: flex;
+        gap: 20px; /* Space between items */
+        margin-left: auto; /* Moves the menu to the right */
+        padding-left: -3%;
+        display: flex;
+    }
+
+    /* Menu Items with Individual Containers */
+    .menu-individual {
+        text-decoration: none;
+        font-size: 16px;
+        color: #e63946;
+        font-weight: 500;
+        padding: 10px 20px;
+        background-color: white; 
+        border-radius: 20px;
+        border: 1px solid #ddd; 
+        transition: all 0.3s ease;
+    }
+
+    /* this is for mobile */
+    @media screen and (max-width: 1100px) {
+        .menu-individual {
+        display: none;
+        }
+    }
+
+    .menu-btn {
+        display: none;
+      }
+  
+
+    .menu a:hover {
+        background-color: #f4a261;
+        color: white;
+        border-color: #f4a261;
+    }
+
+    /* this is for mobile */
+  @media screen and (max-width: 1100px) {
+    header {
+      display: grid;
+      grid-template-areas:
+        "title   title   hamburger"
+        "nav     nav     nav";
+    }
+  
+    h1 {
+      grid-area: title;
+    }
+  
+    .menu a {
+      text-decoration: none;
+      color: black;
+    }
+  
+    .menu-btn {
+      display: none;
+    }
+  
+    .menu-icon {
+      grid-area: hamburger;
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-end;
+      align-items: baseline;
+      padding: 30px 20px 30px 0;
+      position: relative;
+      user-select: none;
+      visibility: visible;
+    }
+  
+    .navicon {
+      background: #333;
+      display: block;
+      height: 2px;
+      width: 18px;
+      position: relative;
+    }
+  
+    .navicon:before {
+      top: 5px;
+    }
+  
+    .navicon:after {
+      top: -5px;
+    }
+  
+    .navicon:before,
+    .navicon:after {
+      background: #333;
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: "";
+      position: absolute;
+      transition: all 0.2s ease-out;
+    }
+  
+    .menu {
+      grid-area: nav;
+      max-width: unset;
+      max-height: 0;
+      transition: max-height 0.2s ease-out;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .menu a {
+      padding: 20px 20px;
+      border-right: 1px solid #f4f4f4;
+      background-color: #eee;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .menu-btn:checked ~ .menu {
+      max-height: 240px;
+    }
+  
+    .menu-btn:checked ~ .menu-icon .navicon {
+      background: transparent;
+    }
+  
+    .menu-btn:checked ~ .menu-icon .navicon:before {
+      transform: rotate(-45deg);
+    }
+  
+    .menu-btn:checked ~ .menu-icon .navicon:after {
+      transform: rotate(45deg);
+    }
+  
+    .menu-btn:checked ~ .menu-icon .navicon:before,
+    .menu-btn:checked ~ .menu-icon .navicon:after {
+      top: 0;
+    }
+  }
+
+    .hero-section {
+        display: flex; /* use flexbox */
+        align-items: center; 
+        justify-content: space-between; 
+        gap: 20px; 
+        background-color: #D9E9ED; 
+        padding: 40px;
+        margin: 2%;
+    }
+    
+     /* this is to add media queries https://www.w3schools.com/css/css3_mediaqueries_ex.asp*/
+    .hero-text {
+        max-width: 600px; 
+    }
+
+    .cta-button {
+        background-color: #FABC5E;
+        color: #1E3A40;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer; /* the cursor is the pointer and indicates the links */
+        font-size: 1rem;
+    }
+    
+    .cta-button:hover {
+        background-color: #FFA318;
+    }
+    
+    .hero-image {
+        width: 400px; /* this sizes the image */
+        height: auto;
+    }
+    
+    /* this is for mobile https://www.w3schools.com/cssref/css3_pr_flex-direction.php */
+    @media (max-width: 768px) {
+        .hero-section {
+            flex-direction: column; 
+            text-align: center;
+        }
+    
+        .hero-image {
+            width: 100%; 
+            max-width: 300px;
+        }
+    }
+    
+    .features-section {
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between; 
+        gap: 30px; 
+        padding: 40px;
+        margin: 2%;
+        background-color: #FABC5E; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* this is for mobile https://www.w3schools.com/howto/howto_css_responsive_text.asp */
+    .features-text {
+        max-width: 500px; 
+    }
+    
+    .features-images {
+        display: flex;
+        flex-direction: column; 
+        gap: 20px; 
+    }
+    
+    .feature-image {
+        width: 300px; 
+        height: auto;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+     /* this is for mobile https://www.w3schools.com/cssref/css3_pr_flex-direction.php */
+    @media (max-width: 768px) {
+        .features-section {
+            flex-direction: column; 
+            text-align: center;
+        }
+    
+        .features-images {
+            flex-direction: row; 
+            justify-content: center;
+        }
+    
+        .feature-image {
+            width: 45%; 
+        }
+    }
+    
+    .content {
+        padding: 50px 20px;
+        text-align: left; 
+    }
+    
+    .buttons-section {
+        display: flex; 
+        justify-content: center; 
+        gap: 20px;
+        flex-wrap: wrap; /* https://www.w3schools.com/cssref/css3_pr_flex-wrap.php#:~:text=Definition%20and%20Usage,nowrap */
+        margin-top: 2%;
+        padding: 20px;
+    }
+    
+    .square-box {
+        width: 300px; 
+        height: 300px; 
+        background-color: #D9E9ED; 
+        text-align: center;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .square-box h3 {
+        font-size: 18px;
+        text-align: center;
+        margin: auto; 
+        padding: 60px;
+    }
+    
+    .square-box p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* this is for mobile https://www.w3schools.com/cssref/css3_pr_flex-direction.php */
+    @media (max-width: 600px) {
+        .buttons-section {
+            flex-direction: column; 
+            align-items: center;
+        }
+    }
+    
+
+    .container {
+        display: flex; 
+        align-items: center; 
+        gap: 20px; 
+        justify-content: center; 
+        margin: 4%;
+    }
+    
+    .text-container1 {
+        background-color: #D9E9ED; 
+        padding: 30px;
+        color: #333; 
+        }
+
+    .item1-image {
+        width: 400px; 
+        height: auto;
+        }
+    
+    .text-container2 {
+        background-color: #D9E9ED; 
+        padding: 30px;
+        color: #333; 
+        }
+
+        @media (max-width: 768px) {
+        .text-container2 {
+        order: 4;
+        }
+    }
+
+
+    .item2-image {
+        width: 400px; 
+        height: auto;
+        }
+
+    
+    
+    .text-container3 {
+        background-color: #D9E9ED; 
+        padding: 30px;
+        color: #333;
+        }
+
+   
+    
+    .item3-image {
+        width: 400px;
+        height: auto;
+    }
+
+    
+
+    .text-container4 {
+        background-color: #D9E9ED; 
+        padding: 30px;
+        color: #333;
+        }
+
+        @media (max-width: 768px) {
+        .text-container4 {
+        order: 7;
+        }
+    }
+   
+    .item4-image {
+        width: 400px; 
+        height: auto;
+    }
+
+    .text-container5 {
+        background-color: #D9E9ED; 
+        padding: 30px;
+        color: #333; 
+        }
+   
+    .item5-image {
+        width: 400px; 
+        height: auto;
+    }
+
+     /* this is for mobile https://www.w3schools.com/cssref/css3_pr_flex-direction.php */
+    @media (max-width: 768px) {
+        .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+    }
+    
+    .header-with-circle {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 5%;
+    }
+    
+    .number-circle {
+        width: 40px;
+        height: 40px;
+        background-color: #FABC5E;
+        color: #1E3A40;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    
+    /* next page tabbed navigation*/
+    .tab-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 15px;
+        border-radius: 15px;
+        margin: 20px auto;
+        display: wrap;
+    }
+
+    @media (max-width: 400px) {
+        .tab-container {
+       flex-wrap: wrap;
+    }
+        .tab-button {
+        display: flex;
+        width: 45%;
+        font-size: 13px;
+        gap: 20px;
+        background: rgba(100, 50, 50, 0.3);
+        border: none;
+        padding: 15px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        transition: 0.3s;
+        }
+    }
+
+    /*buttons tabs*/
+    .tab-button {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        background: rgba(100, 50, 50, 0.3);
+        border: none;
+        padding: 15px 25px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        transition: 0.3s;
+    }
+
+    .tab-button:hover,
+    .tab-button.active {
+        background: rgba(100, 50, 50, 0.8);
+        color: white;
+    }
+
+    .tab-content {
+        display: none;
+    }
+    
+    .tab-content.active {
+        display: block;
+    }
+
+/* carousel container */
+.carousel-container {
+    position: relative;
+    margin-right: 5%;
+    padding-top: 5%;
+    align-items: center;
+}
+
+.box {
+    background: #D9E9ED;
+    padding: 7%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.slide-title {
+    margin-bottom: 12px;
+    font-size: 1.25rem;
+    color: #1E3A40;
+}
+
+.split-container {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    background-color: #D9E9ED;
+    border-radius: 16px;
+    margin: 5%;
+    flex-wrap: wrap; 
+}
+
+.left-box {
+    flex: 1;
+    min-width: 250px;
+}
+
+.left-box h2 {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+    color: #1E3A40;
+}
+
+.left-box p {
+    font-size: 1rem;
+    color: #1E3A40;
+    line-height: 1.6;
+}
+
+.right-box {
+    flex: 1;
+    min-width: 250px;
+}
+
+.right-box li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+
+.comment-box {
+    position: relative;
+    margin: 20px auto;
+    background: #fefefe;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.comment-box textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.comment-box button {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    background-color: #FABC5E;;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comment-box button:hover {
+    background-color: #FFA318;
+}
+
+/* https://www.quackit.com/html/codes/comment_box_colors.cfm */
+

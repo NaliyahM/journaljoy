@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>journaljoy</title>
+    <link rel="stylesheet" href="css/naliyah.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="/path/to/flickity.pkgd.min.js"></script>
+</head>
+
+<body>
+
+    <!-- workshop in class-->
+    <div class="sticky">
+
+<!-- navbar --> <!-- logo -->
+<nav class="navbar">
+   <div class="logo">Journal<span class="highlight">Joy</span></div>
+
+<!-- https://www.w3schools.com/css/css_navbar.asp -->
+
+   <!-- menu items in separate containers -->
+   <div class="menu-container">
+       <div class="menu-individual"><a href="journalbenefits.html">Journal Benefits</a></div>
+       <div class="menu-individual"><a href="quiz.html">Quiz</a></div>
+   </div>
+</nav>
+
+<header>
+    <input class="menu-btn" type="checkbox" id="menu-btn" name="menu-btn"/>
+    <label class="menu-icon" for="menu-btn">
+      <span class="navicon" aria-label="hamburger menu 'icon'">
+    </label>
+  
+    <nav class="menu">
+      <a class="nav-item" href="journalbenefits.html">Journal Benefits</a>
+      <a class="nav-item" href="quiz.html">Quiz</a>
+    </nav>
+ </header>
+
+<!-- citing https://janessagarrow.com/blog/pure-css-hamburger-menu/ -->
+
+<section class="hero-section">
+    <div class="hero-text">
+        <h1>The Four Benefits of Journaling</h1>
+        <p>There are many advantages of journaling that include lowering stress and anxiety, 
+        managing your mental health, improves creativity, and it encourages self-discovery. 
+        Journaling can help you mentally process and gain a deeper understanding of the causes 
+        that impact your overall mood, stress, and ultimately enhance your well being. By 
+        expressing your creativity through exploring your emotions, this can lead to generating 
+        new ideas. Journaling can also help you navigate challenges by reflecting on your experience 
+        and gaining a new perspective.</p>
+        <a class="cta-button" href="quiz.html">Take a Quiz</a>
+    </div>
+    <img src="images/The Benefits of Journaling.jpg" alt="hero Image" class="hero-image">
+</section>
+
+  <!-- https://www.w3schools.com/howto/howto_css_images_side_by_side.asp -->
+
+ <!-- tab navigation -->
+ <div class="tab-container">
+    <button class="tab-button" onclick="openTab(event, 'tab1')">Stress & Anxiety</button>
+    <button class="tab-button" onclick="openTab(event, 'tab2')">Self-Discovery</button>
+    <button class="tab-button" onclick="openTab(event, 'tab3')">Mental Health</button>
+    <button class="tab-button" onclick="openTab(event, 'tab4')">Improves Creativity</button>
+</div>
+
+<!-- tab content -->
+<div class="content-container">
+    <div class="tab-content active" id="tab1">
+
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1>Stress and Anxiety</h1>
+            <p>The benefits of journaling can help relieve your anxious feelings and 
+            reduce rumination. Some of your anxiousness and distress emotions can be 
+            minimized by shifting your thoughts to an action-oriented mindset. By 
+            learning healthy coping mechanisms, you can better manage your anxiety 
+            levels by recognizing trigger patterns and practising self-control. 
+            </p>
+        </div>
+        <img src="images/The Benefits of Journaling.jpg" alt="hero Image" class="hero-image">
+    </section>
+
+    <!-- carousel container -->
+    <div class="carousel-container">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <!-- box 1 -->
+                <div class="swiper-slide">
+                    <div class="box"> 
+                        <h3 class="slide-title">Reframe negative thoughts</h3>
+                        <p>By allowing yourself to fully express your negative thoughts can aid in processing them, 
+                        gain insight of pattern recognition and enable you to experience them on paper. By reframing 
+                        your mindset, this can ensure a more positive and neutralized perspective.</p>
+                    </div>
+                </div>
+                <!-- box 2 -->
+                <div class="swiper-slide">
+                    <div class="box"> 
+                        <h3 class="slide-title">Regulate your emotions</h3>
+                        <p>By writing down your anxieties and build up emotion can create some order when 
+                        everything seems a bit chaotic at the moment. By revealing your innermost fears, 
+                        feelings, thoughts. This can benefit you by gaining a sense of clarity in the 
+                        experience you had. 
+                        </p>
+                    </div>
+                </div>
+                <!-- box 3 -->
+                <div class="swiper-slide">
+                    <div class="box"> 
+                        <h3 class="slide-title">Helps with brooding</h3>
+                        <p>Writing down your emotions can significantly change the way you internalize your 
+                        thoughts. By gaining a new and objective stands on the event or experience that 
+                        happened, you can break free from the endless cycle of obsessive thinking. 
+                        </p>
+                    </div>
+                </div>
+                <!-- box 4 -->
+                <div class="swiper-slide">
+                    <div class="box"> 
+                        <h3 class="slide-title">Improves self-awareness</h3>
+                        <p>Journaling can provide you with a new introspection of an experience and 
+                        gain a better understanding of a situation. This will enable you to better 
+                        comprehend both your own and other people’s emotions.
+                    </p>
+                    </div>
+                </div>
+                <!-- box 5 -->
+                <div class="swiper-slide">
+                    <div class="box"> 
+                        <h3 class="slide-title">Trigger identification</h3>
+                        <p>By writing down your emotions and thoughts, this can help you identify patterns 
+                        and contributing causes to your anxiety. By becoming more self-aware of these 
+                        triggers in certain situations, this can help you develop coping mechanisms and 
+                        reduce stress. 
+                    </p>
+                    </div>
+                </div>
+                <!-- box 6 -->
+                <div class="swiper-slide">
+                    <div class="box"> 
+                        <h3 class="slide-title">Sense of control</h3>
+                        <p>By processing and organizing your thoughts and emotions on paper, this allows you 
+                        to have a better grasp on an experience and clarify complex emotions. This can reduce 
+                        your stress levels by gaining a sense of control over your emotions. 
+                    </p>
+                    </div>
+                </div>
+            </div>
+            <!-- pagination & navigation -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    <div class="split-container">
+        <!-- left box -->
+        <div class="left-box">
+            <h2>Untangle your anxiety with these journaling prompts</h2>
+            <p>Anxiety can be an unsettling feeling and often sneaks up when you 
+            least expect it, resulting in ruining your day. By untangling your 
+            thoughts and emotions with these anxiety prompts, this can help you 
+            pinpoint your triggers and patterns. 
+            </p>
+        </div>
+    
+        <!-- right box -->
+        <div class="right-box">
+            <ol>
+                <li>What situations or thoughts lead you to trigger your anxiety the most?</li>
+                <li>What are your physical sensations that you experience when you feel anxious?</li>
+                <li>What are some of your negative thoughts when you feel anxious and how do you reframe them to be more positive?</li>
+                <li>What are some of your coping mechanisms that helped you gain control of your anxiety in the past?</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!-- tab Content -->
+<div class="content-container">
+    <div class="tab-content active" id="tab2">
+
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1>Self-Discovery</h1>
+            <p>Journaling can guide you to self-discover and explore your own thoughts, 
+            feelings, and experiences allowing you to become more self-aware. By reflecting 
+            on personal experiences, you can begin to evaluate your own growth and set goals 
+            for yourself by thinking back on past events.
+            </p>
+        </div>
+        <img src="images/The Benefits of Journaling.jpg" alt="Hero Image" class="hero-image">
+    </section>
+
+    <!-- carousel container -->
+    <div class="carousel-container">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <!-- box 1 -->
+                <div class="swiper-slide">
+                    <div class="box"> 
+                        <h3 class="slide-title">Critical thinking skills</h3>
+                        <p>By allowing yourself to fully express your negative thoughts can aid in processing them, 
+                        gain insight of pattern recognition and enable you to experience them on paper. By reframing 
+                        your mindset, this can ensure a more positive and neutralized perspective.</p>
+                    </div>
+                </div>
+                <!-- box 2 -->
+                <div class="swiper-slide">
+                    <div class="box"> 
+                        <h3 class="slide-title">Allows for self-reflection</h3>
+                        <p>Journaling can provide a space to reflect on your own experiences, reactions, and emotions 
+                        allowing you to identify triggers that impact your mental health. This provides new insight on 
+                        how to develop healthier habits that increase self-awareness. 
+                        </p>
+                    </div>
+                </div>
+                <!-- box 3 -->
+                <div class="swiper-slide">
+                    <div class="box"> 
+                        <h3 class="slide-title">Encouraging awareness</h3>
+                        <p>Journaling encourages self-awareness by providing a space to reflect on one's behaviours, 
+                        emotions, and thoughts, which results in a deeper understanding of themselves. Being more 
+                        self-aware as an individual enables a sense of consciousness, leading to thoughtful decision 
+                        making.
+                        </p>
+                    </div>
+                </div>
+                <!-- box 4 -->
+                <div class="swiper-slide">
+                    <div class="box"> 
+                        <h3 class="slide-title">Achieve goals</h3>
+                        <p>By setting personal goals this allows you to remain accountable and motivated to achieve them. 
+                        Journaling can help you recognize areas to improve through reflecting on your experiences 
+                        resulting in developing solutions to overcome them. 
+                    </p>
+                    </div>
+                </div>
+                <!-- box 5 -->
+                <div class="swiper-slide">
+                    <div class="box"> 
+                        <h3 class="slide-title">Self-confidence</h3>
+                        <p>Journaling can help boost your self confidence by identifying your strengths and weaknesses 
+                        resulting in  a stronger sense of values and core needs. 
+                    </p>
+                    </div>
+                </div>
+            </div>
+            <!-- pagination & navigation -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    <div class="split-container">
+        <!-- left box -->
+        <div class="left-box">
+            <h2>Discovery youself with these journaling prompts</h2>
+            <p>Self discovery prompts individuals to explore their imagination and process their feelings. 
+            These prompts inspire you to reveal your identity and further explore opportunities for personal growth.</p>
+        </div>
+    
+        <!-- right box -->
+        <div class="right-box">
+            <ol>
+                <li>What are some experiences or memories from the past that shaped who 
+                you are today and how did they prepare you for future development?</li>
+                <li>By taking notice of your strengths, what are some areas of improvement about myself 
+                to reach my fullest potential? </li>
+                <li>What are your biggest fears or insecurities that you are facing and how do you overcome them?</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!-- tab content -->
+<div class="content-container">
+    <div class="tab-content active" id="tab3">
+
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1>Mental Health</h1>
+            <p>Journaling can benefit your emotional state by regulating your feelings and becoming more aware of intrusive thoughts. 
+            This allows you to identify triggers and control them by self soothing with positive talk. This can overall improve your 
+            mood by reducing anxiety and depression symptoms. 
+            </p>
+        </div>
+        <img src="images/The Benefits of Journaling.jpg" alt="Hero Image" class="hero-image">
+    </section>
+
+    <!-- carousel container -->
+    <div class="carousel-container">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <!-- box 1 -->
+                <div class="swiper-slide">
+                    <div class="box"> 
+                        <h3 class="slide-title">Improves sleep</h3>
+                        <p>By journaling this can improve the quality of sleep by alleviating worries and 
+                        decluttering your mind from negative thoughts. 
+                        </p>
+                    </div>
+                </div>
+                <!-- box 2 -->
+                <div class="swiper-slide">
+                    <div class="box"> 
+                        <h3 class="slide-title">Process complex emotions</h3>
+                        <p>Journaling can help identify and process emotions more clearly when there is a 
+                        better understanding of these repressed emotions. This can overall relieve tension 
+                        and reduce stress creating a healthy outlet. 
+                        </p>
+                    </div>
+                </div>
+                <!-- box 3 -->
+                <div class="swiper-slide">
+                    <div class="box"> 
+                        <h3 class="slide-title">Helps face challenges</h3>
+                        <p>Journaling can allow individuals to face challenges by self reflecting on past experiences 
+                        and through developing problem solving skills. This enables individuals to gain clarity and 
+                        use coping mechanisms to reduce mental distress.  
+                        </p>
+                    </div>
+                </div>
+                <!-- box 4 -->
+                <div class="swiper-slide">
+                    <div class="box"> 
+                        <h3 class="slide-title">Improves cognitive function</h3>
+                        <p>Journaling provides mental clarity and boosts memory enabling the individual to make good decisions 
+                        and have the capacity to understand complex problems. This encourages self reflection and personal 
+                        growth by creating a deeper connection with the subject matter. 
+                    </p>
+                    </div>
+                </div>
+                <!-- box 5 -->
+                <div class="swiper-slide">
+                    <div class="box"> 
+                        <h3 class="slide-title">Improves mood</h3>
+                        <p>Journaling can improve your mood by creating an outlet to process complex emotions 
+                        and regulating them by developing coping mechanisms. This enables individuals to become 
+                        more mindful of their behaviours and make informed choices that result in improving your emotional intelligence. 
+                    </p>
+                    </div>
+                </div>
+            </div>
+            <!-- pagination & navigation -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    <div class="split-container">
+        <!-- left box -->
+        <div class="left-box">
+            <h2>Relieve your worries with these journaling prompts</h2>
+            <p>Understanding how to regulate your emotions can help you identify them and gain a 
+            new perspective to enable your personal growth. Journaling can be rewarding as it can 
+            provide you with new insight that relieves your worries. 
+            </p>
+        </div>
+    
+        <!-- right box -->
+        <div class="right-box">
+            <ol>
+                <li>What is one challenge in the past that has set yourself back but learned from it?</li>
+                <li>What usually causes you stress or anxiety and how can I address it by developing coping mechanisms?</li>
+                <li>What are some mindful shifts that can assist you in thinking more positively?</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!-- tab content -->
+<div class="content-container">
+    <div class="tab-content active" id="tab4">
+
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1>Improves Creativity</h1>
+            <p>Journaling enhances your creativity by gaining new perspectives and brainstorming ideas that allow for self individual expression. 
+            By exploring emotions, this allows for individuals to develop a deeper understanding of underlying issues that may be causing a creative block.  
+            </p>
+        </div>
+        <img src="images/The Benefits of Journaling.jpg" alt="Hero Image" class="hero-image">
+    </section>
+
+    <!-- carousel container -->
+    <div class="carousel-container">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <!-- box 1 -->
+                <div class="swiper-slide">
+                    <div class="box"> 
+                        <h3 class="slide-title">Problem solving skills</h3>
+                        <p>Journaling can enable divergent thinking that can enhance your creative process in coming up with ideas, possibilities, 
+                        and solutions to problems. It can also assist you in challenges that you face and think through them in order to make logical decisions. 
+                        </p>
+                    </div>
+                </div>
+                <!-- box 2 -->
+                <div class="swiper-slide">
+                    <div class="box"> 
+                        <h3 class="slide-title">Personal growth</h3>
+                        <p>Journaling can provide you the opportunity to process negative emotions that might be triggering affecting your well-being. 
+                        By decluttering your mind, this allows you to experience your thoughts and feelings resulting in more self-awareness. 
+                        </p>
+                    </div>
+                </div>
+                <!-- box 3 -->
+                <div class="swiper-slide">
+                    <div class="box"> 
+                        <h3 class="slide-title">Self-expression</h3>
+                        <p>Journaling helps an individual foster a sense of expression by writing freely without 
+                        any judgment resulting in a boost of confidence and mindfulness. 
+                        </p>
+                    </div>
+                </div>
+                <!-- box 4 -->
+                <div class="swiper-slide">
+                    <div class="box"> 
+                        <h3 class="slide-title">Find inspiration</h3>
+                        <p>Journaling can enhance your creativity by decluttering your mind allowing for more focused thinking 
+                        making it easier to have creative breakthroughs. This also encourages the mind to explore new ideas and 
+                        spark concepts by processing your thoughts. 
+                    </p>
+                    </div>
+                </div>
+                <!-- box 5 -->
+                <div class="swiper-slide">
+                    <div class="box"> 
+                        <h3 class="slide-title">Challenge beliefs</h3>
+                        <p>Journaling can help individuals unpack beliefs by challenging them by gaining new insight 
+                        and developing constructive thinking. 
+                    </p>
+                    </div>
+                </div>
+            </div>
+            <!-- pagination & navigation -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    <div class="split-container">
+        <!-- left box -->
+        <div class="left-box">
+            <h2>Become inspired with these journaling prompts</h2>
+            <p>Creative journaling prompts can encourage a new consciousness that allows 
+            you to explore your thoughts and emotions without being judged. This can lead 
+            to unexpected insights that explore your imagination and break free from creative blocks. 
+            </p>
+        </div>
+    
+        <!-- right box -->
+        <div class="right-box">
+            <ol>
+                <li>How can you push your creative boundaries to improve my personal growth?</li>
+                <li>What are some strategies or coping mechanisms that you can use to better improve my negative patterns?</li>
+                <li>What are some lessons that you have learned recently to create the best possible outcome for my future?</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!-- split container -->
+<!-- https://codedamn.com/news/frontend/how-to-put-image-and-text-side-by-side-in-html -->
+<!-- https://teamtreehouse.com/community/left-and-right-aligned-css-list -->
+
+<script>
+// function to handle tab switching
+function openTab(event, tabId) {
+    // hide all tab content
+    document.querySelectorAll(".tab-content").forEach(tab => {
+        tab.classList.remove("active");
+    });
+
+    // remove active class from all buttons
+    document.querySelectorAll(".tab-button").forEach(button => {
+        button.classList.remove("active");
+    });
+
+    // show the selected tab content
+    document.getElementById(tabId).classList.add("active");
+
+    // highlight the active tab button
+    event.currentTarget.classList.add("active");
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+<!-- tab content -->
+<!-- https://www.w3schools.com/w3css/w3css_tabulators.asp -->
+<!-- https://getbootstrap.com/docs/5.0/components/navs-tabs/ -->
+
+<!-- Carousel Container -->
+ <!-- https://getbootstrap.com/docs/5.0/components/carousel/ -->
+
+
+<script>
+// function to initialize swiper or disable it on mobile
+function initSwiper() {
+    if (window.innerWidth > 450) {
+        // enable swiper for desktop/tablet
+        swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3, // shows 3 boxes at a time
+            spaceBetween: 20, // space between boxes
+            loop: true, // infinite loop
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                1024: { slidesPerView: 3 }, // 3 boxes on large screens
+                768: { slidesPerView: 2 }, // 2 boxes on tablets
+                300: { slidesPerView: 1 }
+            }
+        });
+    } else {
+        // disable swiper and show full list on mobile
+        if (swiper) swiper.destroy(true, true); // destroy swiper if it exists
+        document.querySelector(".swiper-wrapper").style.display = "block"; // show all items as a list
+        let slides = document.querySelectorAll(".swiper-slide");
+        slides.forEach(slide => {
+            slide.style.width = "100%"; // make each slide full-width
+            slide.style.marginBottom = "10px"; // add space between boxes
+        });
+    }
+}
+
+// initialize Swiper on page load
+let swiper;
+initSwiper();
+
+// recheck on window resize
+window.addEventListener("resize", function () {
+    initSwiper();
+});
+</script>
+
+<div class="content">
+    <h3>Record your own story</h3>
+    <p>This is where you may write your own unique narrative, 
+    get guidance, and expand on concepts.
+    </p>
+</div>
+
+<div class="comment-box">
+    <textarea placeholder="Write your comment..."></textarea>
+    <button type="submit">Comment</button>
+</div>
+
+ <!-- https://www.quackit.com/html/codes/comment_box_colors.cfm -->
+
+</body>
+</html>
