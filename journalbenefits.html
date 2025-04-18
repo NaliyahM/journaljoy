@@ -16,7 +16,7 @@
 
 <!-- navbar --> <!-- logo -->
 <nav class="navbar">
-    <a href="index.html" class="logo">Journal<span class="highlight">Joy</span></a>
+   <div class="logo">Journal<span class="highlight">Joy</span></div>
 
     <!-- https://www.w3schools.com/css/css_navbar.asp -->
 
@@ -25,21 +25,22 @@
        <div class="menu-individual"><a href="journalbenefits.html">Journal Benefits</a></div>
        <div class="menu-individual"><a href="quiz.html">Quiz</a></div>
    </div>
+
+    <header>
+        <input class="menu-btn" type="checkbox" id="menu-btn" name="menu-btn"/>
+        <label class="menu-icon" for="menu-btn">
+        <span class="navicon" aria-label="hamburger menu 'icon'">
+        </label>
+    
+        <nav class="menu">
+        <a class="nav-item" href="journalbenefits.html">Journal Benefits</a>
+        <a class="nav-item" href="quiz.html">Quiz</a>
+        </nav>
+    </header>
+
 </nav>
 
-<header>
-    <input class="menu-btn" type="checkbox" id="menu-btn" name="menu-btn"/>
-    <label class="menu-icon" for="menu-btn">
-      <span class="navicon" aria-label="hamburger menu 'icon'">
-    </label>
-  
-    <nav class="menu">
-      <a class="nav-item" href="journalbenefits.html">Journal Benefits</a>
-      <a class="nav-item" href="quiz.html">Quiz</a>
-    </nav>
- </header>
-
-<!-- citing https://janessagarrow.com/blog/pure-css-hamburger-menu/ -->
+    <!-- citing https://janessagarrow.com/blog/pure-css-hamburger-menu/ -->
 
 <section class="hero-section">
     <div class="hero-text">
