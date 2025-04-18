@@ -51,7 +51,7 @@
         text-align: left; /* this makes all the paragraphs left-aligned */
         line-height: 1.6; /* 1.6 is the recommond line-height according to W3schools */
         margin-bottom: 5%; /* adding a margin bottom below the paragraphs */
-        margin-top: 5%;
+        margin-top: 3%;
     }
 
     body {
@@ -85,6 +85,7 @@
         font-weight: bold;
         color: #FABC5E;
         justify-content: space-between; /* logo to the right and menu individual for the left */ /* https://www.w3schools.com/css/css_font_size.asp */
+        text-decoration: none;
     }
     
     /* Navbar Container */
@@ -120,13 +121,21 @@
     .menu-individual {
         text-decoration: none;
         font-size: 16px;
-        color: #e63946;
         font-weight: 500;
         padding: 10px 20px;
-        background-color: white; 
+        background-color:  #FABC5E; 
         border-radius: 20px;
         border: 1px solid #ddd; 
         transition: all 0.3s ease;
+    }
+ 
+    .menu-individual:hover {
+        background-color: #FFA318;
+    }
+
+    .menu-individual a {
+        text-decoration: none; 
+        color: #1E3A40;
     }
 
     /* this is for mobile */
@@ -274,8 +283,9 @@
         border-radius: 5px;
         cursor: pointer; /* the cursor is the pointer and indicates the links */
         font-size: 1rem;
+        text-decoration: none;
     }
-    
+   
     .cta-button:hover {
         background-color: #FFA318;
     }
