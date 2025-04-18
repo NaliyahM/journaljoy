@@ -51,6 +51,7 @@
         text-align: left; /* this makes all the paragraphs left-aligned */
         line-height: 1.6; /* 1.6 is the recommond line-height according to W3schools */
         margin-bottom: 5%; /* adding a margin bottom below the paragraphs */
+        margin-top: 5%;
     }
 
     body {
@@ -58,10 +59,26 @@
     }
     
     h3 {
+        font-family: "Tanklager-Original";
         font-size: 2rem; /* 2 rem equals 32px */
         color: #1E3A40;
         margin-bottom: 2%;
     }
+
+    h4 {
+        font-family: "Tanklager-Original";
+        font-size: 1.6rem; 
+        color: #1E3A40;
+        margin-bottom: 2%;
+    }
+
+    @media (max-width: 600px) {
+        h4 {
+        font-size: 1rem;
+        }
+    }
+
+    /* https://stackoverflow.com/questions/33307405/how-to-make-headers-resize-for-mobile-css */
 
     .logo {
         font-size: 1.6rem; /* 1.8 equals to 30 px W3schools */ /* https://www.w3schools.com/css/css_font_size.asp */
@@ -343,6 +360,7 @@
     .square-box {
         width: 300px; 
         height: 300px; 
+        padding: 20px;
         background-color: #D9E9ED; 
         text-align: center;
         border-radius: 12px;
@@ -353,7 +371,7 @@
         font-size: 18px;
         text-align: center;
         margin: auto; 
-        padding: 60px;
+        padding: 40px;
     }
     
     .square-box p {
@@ -368,7 +386,6 @@
             align-items: center;
         }
     }
-    
 
     .container {
         display: flex; 
@@ -574,6 +591,7 @@
 }
 
 .left-box h2 {
+    font-family: "Tanklager-Original";
     font-size: 1.75rem;
     margin-bottom: 10px;
     color: #1E3A40;
