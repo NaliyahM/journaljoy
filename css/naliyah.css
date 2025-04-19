@@ -146,6 +146,10 @@
         background-color: #FFA318;
     }
 
+    .menu-individual:focus {
+        background-color: #d17d00;
+    }
+
     .menu-individual a {
         text-decoration: none; 
         color: #1E3A40;
