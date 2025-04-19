@@ -541,7 +541,6 @@
         width: 45%;
         font-size: 13px;
         gap: 20px;
-        background: rgba(100, 50, 50, 0.3);
         border: none;
         padding: 15px;
         border-top-left-radius: 10px;
@@ -555,7 +554,8 @@
         display: flex;
         justify-content: center;
         gap: 20px;
-        background: rgba(100, 50, 50, 0.3);
+        background:#FABC5E;
+        color: #1E3A40;
         border: none;
         padding: 15px 25px;
         border-top-left-radius: 10px;
@@ -565,7 +565,7 @@
 
     .tab-button:hover,
     .tab-button.active {
-        background: rgba(100, 50, 50, 0.8);
+        background:#FFA318;
         color: white;
     }
 
@@ -657,7 +657,7 @@
     position: absolute;
     bottom: 16px;
     right: 16px;
-    background-color: #FABC5E;;
+    background-color: #FABC5E;
     color: white;
     border: none;
     padding: 10px 18px;
